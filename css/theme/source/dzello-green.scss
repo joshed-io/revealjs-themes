@@ -1,0 +1,102 @@
+/**
+ * Black theme for reveal.js. This is the opposite of the 'white' theme.
+ *
+ * By Hakim El Hattab, http://hakim.se
+ */
+
+
+// Default mixins and settings -----------------
+@import "../template/mixins";
+@import "../template/settings";
+// ---------------------------------------------
+
+// Theme notes
+// Set margin: 0.2 in Reveal.js initializer
+// Add divs for the 4 lines described below
+
+// Include theme-specific fonts
+@import url(https://fonts.googleapis.com/css?family=Roboto+Slab:300,700);
+@import url(https://fonts.googleapis.com/css?family=Roboto:700);
+
+
+// Override theme settings (see ../template/settings.scss)
+$backgroundColor: #fff;
+
+$mainColor: #363636;
+$headingColor: #141414;
+
+$mainFontSize: 32px;
+$mainFont: 'Roboto Slab', Helvetica, sans-serif;
+$headingFont: 'Roboto', monospace;
+$headingTextShadow: none;
+$headingLetterSpacing: normal;
+$headingTextTransform: uppercase;
+$headingFontWeight: 700;
+$linkColor: #4CAF50;
+$linkColorHover: lighten( $linkColor, 15% );
+$selectionBackgroundColor: lighten( $linkColor, 25% );
+
+$heading1Size: 2.6em;
+$heading2Size: 2.2em;
+$heading3Size: 1.7em;
+$heading4Size: 1.4em;
+
+section.has-light-background {
+  &, h1, h2, h3, h4, h5, h6 {
+    color: #141414;
+  }
+}
+
+.reveal .controls {
+  right: 50px;
+  bottom: 50px;
+}
+
+.line {
+  content: '';
+  position: fixed;
+  background: $linkColor;
+  z-index: 105;
+  &.top {
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 30px;
+    @media (max-width: 840px) {
+      height: 15px;
+    }
+  }
+  &.bottom {
+    left: 0;
+    top: auto;
+    bottom: 0;
+    width: 100%;
+    height: 30px;
+    @media (max-width: 840px) {
+      height: 15px;
+    }
+  }
+  &.left {
+    left: 0;
+    top: 0;
+    width: 30px;
+    height: 200%;
+    @media (max-width: 840px) {
+      width: 15px;
+    }
+  }
+  &.right {
+    left: auto;
+    right: 0;
+    top: 0;
+    width: 30px;
+    height: 200%;
+    @media (max-width: 840px) {
+      width: 15px;
+    }
+  }
+}
+
+// Theme template ------------------------------
+@import "../template/theme";
+// ---------------------------------------------
