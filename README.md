@@ -14,9 +14,15 @@ https://revealjs-themes.netlify.com/
 
 A hot pink theme with Roboto fonts.
 
+- [demo](https://revealjs-themes.netlify.com/robot-lung.html)
+- [download](https://revealjs-themes.netlify.com/css/theme/robot-lung.css)
+
 ## sunblind
 
 A bright, sunny theme with Leto and Lora fonts.
+
+- [demo](https://revealjs-themes.netlify.com/sunblind.html)
+- [download](https://revealjs-themes.netlify.com/css/theme/sunblind.css)
 
 # Development
 
