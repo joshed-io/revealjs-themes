@@ -1,10 +1,34 @@
 /**
- * Black theme for reveal.js. This is the opposite of the 'white' theme.
- *
- * By Hakim El Hattab, http://hakim.se
- */
-@import url(https://fonts.googleapis.com/css?family=Roboto+Slab:300,700);
-@import url(https://fonts.googleapis.com/css?family=Roboto:700);
+
+  [ sunblind ]
+
+  A blindingly sunny theme for Reveal.js with Lora + Leto fonts and a colorful border.
+  By Josh Dzielak, https://dzello.com/, License MIT
+
+  The bold border is optional and requires some HTML. To use it:
+
+  1. Add 4 divs to your HTML page:
+    <div class="line top"></div>
+    <div class="line bottom"></div>
+    <div class="line left"></div>
+    <div class="line right"></div>
+
+  2. Set { margin: 0.2 } in the Reveal.js initializer to make sure
+  your presentation content doesn't collide with the frame.
+
+  Like the theme but don't like the colors? Don't fret. Just change
+  $borderColor and/or $linkColor below to something else and rebuild.
+
+  Or if you don't want to rebuild the theme just override the .line background
+  property with some CSS:
+
+  .line {
+    background: <new-color>;
+  }
+
+*/
+@import url(https://fonts.googleapis.com/css?family=Lato:300,700);
+@import url(https://fonts.googleapis.com/css?family=Lora:700);
 section.has-light-background, section.has-light-background h1, section.has-light-background h2, section.has-light-background h3, section.has-light-background h4, section.has-light-background h5, section.has-light-background h6 {
   color: #141414; }
 
@@ -15,7 +39,7 @@ section.has-light-background, section.has-light-background h1, section.has-light
 .line {
   content: '';
   position: fixed;
-  background: #FF4081;
+  background: #f6f195;
   z-index: 105; }
   .line.top {
     left: 0;
@@ -60,7 +84,7 @@ body {
   background-color: #fff; }
 
 .reveal {
-  font-family: "Roboto Slab", Helvetica, sans-serif;
+  font-family: "Lato", serif;
   font-size: 32px;
   font-weight: normal;
   color: #363636; }
@@ -91,7 +115,7 @@ body {
 .reveal h6 {
   margin: 0 0 20px 0;
   color: #141414;
-  font-family: "Roboto", monospace;
+  font-family: "Lora", sans-serif;
   font-weight: 700;
   line-height: 1.2;
   letter-spacing: normal;
@@ -100,16 +124,16 @@ body {
   word-wrap: break-word; }
 
 .reveal h1 {
-  font-size: 2.6em; }
+  font-size: 2em; }
 
 .reveal h2 {
-  font-size: 2.2em; }
+  font-size: 1.8em; }
 
 .reveal h3 {
-  font-size: 1.7em; }
+  font-size: 1.4em; }
 
 .reveal h4 {
-  font-size: 1.4em; }
+  font-size: 1.2em; }
 
 .reveal h1 {
   text-shadow: none; }

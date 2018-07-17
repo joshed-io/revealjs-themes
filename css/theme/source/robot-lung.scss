@@ -1,22 +1,48 @@
 /**
- * Black theme for reveal.js. This is the opposite of the 'white' theme.
- *
- * By Hakim El Hattab, http://hakim.se
- */
 
+  [ robot-lung ]
+
+  A hot pink theme for Reveal.js with Roboto fonts and a colorful border.
+  By Josh Dzielak, https://dzello.com/, License MIT
+
+  The bold border is optional and requires some HTML. To use it:
+
+  1. Add 4 divs to your HTML page:
+    <div class="line top"></div>
+    <div class="line bottom"></div>
+    <div class="line left"></div>
+    <div class="line right"></div>
+
+  2. Set { margin: 0.2 } in the Reveal.js initializer to make sure
+  your presentation content doesn't collide with the frame.
+
+  Like the theme but don't like the colors? Don't fret. Just change
+  $borderColor and/or $linkColor below to something else and rebuild.
+
+  Or if you don't want to rebuild the theme just override the .line background
+  property with some CSS:
+
+  .line {
+    background: <new-color>;
+  }
+
+*/
 
 // Default mixins and settings -----------------
 @import "../template/mixins";
 @import "../template/settings";
 // ---------------------------------------------
 
-// Theme notes
-// Set margin: 0.2 in Reveal.js initializer
-// Add divs for the 4 lines described below
 
 // Include theme-specific fonts
 @import url(https://fonts.googleapis.com/css?family=Roboto+Slab:300,700);
 @import url(https://fonts.googleapis.com/css?family=Roboto:700);
+
+
+// store hot pink in a variable
+$hotPink: #FF4081;
+// the color of the thick border surrounding the presention
+$borderColor: $hotPink;
 
 
 // Override theme settings (see ../template/settings.scss)
@@ -26,13 +52,13 @@ $mainColor: #363636;
 $headingColor: #141414;
 
 $mainFontSize: 32px;
-$mainFont: 'Roboto Slab', Helvetica, sans-serif;
-$headingFont: 'Roboto', monospace;
+$mainFont: 'Roboto Slab', serif;
+$headingFont: 'Roboto', sans-serif;
 $headingTextShadow: none;
 $headingLetterSpacing: normal;
 $headingTextTransform: uppercase;
 $headingFontWeight: 700;
-$linkColor: #FF4081;
+$linkColor: $hotPink;
 $linkColorHover: lighten( $linkColor, 15% );
 $selectionBackgroundColor: lighten( $linkColor, 25% );
 
@@ -55,7 +81,7 @@ section.has-light-background {
 .line {
   content: '';
   position: fixed;
-  background: $linkColor;
+  background: $borderColor;
   z-index: 105;
   &.top {
     left: 0;
