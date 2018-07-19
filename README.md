@@ -8,6 +8,8 @@ To see demos of the themes along with download links, visit a deployed version o
 
 https://revealjs-themes.netlify.com/
 
+Make sure to follow the instructions at the top of the CSS files to enable all the functionality in the theme.
+
 # Themes
 
 ### robot-lung
@@ -24,6 +26,18 @@ A bright, sunny theme with Leto and Lora fonts.
 - [demo](https://revealjs-themes.netlify.com/sunblind.html)
 - [download](https://revealjs-themes.netlify.com/css/theme/sunblind.css)
 
+# Customization
+
+These themes make it easy to set up a colorful border for your presentation. Each has a default color, but's very easy to change without recompiling the theme.
+
+Just add this CSS anywhere after you include the theme:
+
+```css
+.line {
+  background: #<new-color>;
+}
+```
+
 # Development
 
-You can make changes to the SCSS in order to build customized versions of these themes. See the instructions in the main [Reveal.js repo](https://github.com/hakimel/reveal.js/) for information on how to run and build themes - this repository is just a fork of that one.
+For deeper customization, you can make changes to the SCSS in order to build customized versions of these themes. See the instructions in the main [Reveal.js repo](https://github.com/hakimel/reveal.js/) for information on how to run and build themes - this repository is just a fork of that one.
