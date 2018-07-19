@@ -1,0 +1,2 @@
+# Redirect default Netlify subdomain to primary domain
+https://revealjs-themes.netlify.com/* https://revealjs-themes.dzello.com/:splat 301!
