@@ -6,7 +6,7 @@ This repository is a collection of themes I've created for Reveal.js. They're fr
 
 To see demos of the themes along with download links, visit a deployed version of this repository at:
 
-https://revealjs-themes.netlify.com/
+https://revealjs-themes.dzello.com/
 
 Make sure to follow the instructions at the top of the CSS files to enable all the functionality in the theme.
 
