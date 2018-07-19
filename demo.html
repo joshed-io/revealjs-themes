@@ -385,12 +385,7 @@ Reveal.addEventListener( 'customevent', function() {
 
       // More info https://github.com/hakimel/reveal.js#configuration
       Reveal.initialize({
-        controls: true,
-        progress: true,
         history: true,
-        center: true,
-        margin: 0.2,
-
         transition: 'slide', // none/fade/slide/convex/concave/zoom
 
         // More info https://github.com/hakimel/reveal.js#dependencies
@@ -406,9 +401,14 @@ Reveal.addEventListener( 'customevent', function() {
       });
 
     </script>
-    <div class="line top"></div>
-    <div class="line bottom"></div>
-    <div class="line left"></div>
-    <div class="line right"></div>
+
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-24132749-1"></script>
+    <script>
+     window.dataLayer = window.dataLayer || [];
+     function gtag(){dataLayer.push(arguments);}
+     gtag('js', new Date());
+     gtag('config', "UA-24132749-1");
+    </script>
+
   </body>
 </html>
