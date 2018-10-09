@@ -123,6 +123,18 @@ section.has-light-background {
   }
 }
 
+// don't show the colored frame against dark backgrounds
+.reveal.has-dark-background {
+  .line {
+    display: none;
+  }
+}
+
 // Theme template ------------------------------
 @import "../template/theme";
 // ---------------------------------------------
+
+.reveal .progress {
+  z-index: 1000;
+  color: lighten($hullBlue, 15%);
+}
